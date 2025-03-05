@@ -8,6 +8,3 @@ function textToNumber(text) {
     }
     return num;
 }
-console.log(textToNumber("labas"));
-console.log(textToNumber("kebabas"));
-console.log(textToNumber("a"));

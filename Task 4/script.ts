@@ -15,6 +15,6 @@ function textToNumber(text: string): number {
   }
   return num;
 }
-console.log(textToNumber("labas"));   // 10101
-console.log(textToNumber("kebabas")); // 1010101
-console.log(textToNumber("a"));       // 1
+// console.log(textToNumber("labas"));   // 10101
+// console.log(textToNumber("kebabas")); // 1010101
+// console.log(textToNumber("a"));       // 1
