@@ -50,8 +50,8 @@ type Player = {
   }
   
   function displayTeams(teams: Team[]): void {
-    const outputElement: HTMLElement | null = document.querySelector('#output');
-    if (!outputElement) return;
+    const outElement: HTMLElement | null = document.querySelector('#output');
+    if (!outElement) return;
   
     teams.forEach((team: Team) => {
       const teamCard: HTMLDivElement = document.createElement('div');
@@ -78,7 +78,7 @@ type Player = {
       playersButton.onclick = (): void => fetchPlayersData(team.id);
       teamCard.appendChild(playersButton);
   
-      outputElement.appendChild(teamCard);
+      outElement.appendChild(teamCard);
     });
   }
   

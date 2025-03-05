@@ -30,8 +30,8 @@ function fetchPlayersData(teamId) {
     });
 }
 function displayTeams(teams) {
-    const outputElement = document.querySelector('#output');
-    if (!outputElement)
+    const outElement = document.querySelector('#output');
+    if (!outElement)
         return;
     teams.forEach((team) => {
         const teamCard = document.createElement('div');
@@ -52,7 +52,7 @@ function displayTeams(teams) {
         playersButton.textContent = 'Players';
         playersButton.onclick = () => fetchPlayersData(team.id);
         teamCard.appendChild(playersButton);
-        outputElement.appendChild(teamCard);
+        outElement.appendChild(teamCard);
     });
 }
 function displayPlayers(players) {
